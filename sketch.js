@@ -319,7 +319,7 @@ function titleLevel1() {
     if(cube2.isTouching(jumpPower)) {
         jump2 = jump2 - 2.5;
         objective += 1;
-        jumpPower.x =remove();
+        jumpPower.remove();
     }
 }
 
