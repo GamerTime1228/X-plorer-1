@@ -301,25 +301,25 @@ function titleLevel1() {
     if(cube.isTouching(speedPower)) {
         speed = speed + 5;
         objective += 1;
-        speedPower.x = -1000;
+        speedPower.remove();
     }
 
     if(cube.isTouching(jumpPower)) {
         jump = jump - 2.5;
         objective += 1;
-        jumpPower.x = -1000;
+        jumpPower.remove();
     }
 
     if(cube2.isTouching(speedPower)) {
         speed2 = speed2 + 5;
         objective += 1;
-        speedPower.x = -1000;
+        speedPower.remove();
     }
 
     if(cube2.isTouching(jumpPower)) {
         jump2 = jump2 - 2.5;
         objective += 1;
-        jumpPower.x = -1000;
+        jumpPower.x =remove();
     }
 }
 
