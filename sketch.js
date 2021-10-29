@@ -20,7 +20,7 @@ var button1;
 var lava1;
 var lava2;
 var lavaMonster;
-var timer1
+var timer1 = 0;
 
 var level = 0;
 var objective = 0;
@@ -577,7 +577,6 @@ function level1() {
         wall6.x = -1000;
         button.x = -1000;
         direction4 = 1;
-        timer1 = 0;
         objective += 1;
     }
     if(objective === 10) {
@@ -597,7 +596,6 @@ function level1() {
             }
         }
         if(cube.isTouching(lavaMonster) || cube.isTouching(lava1) || cube.isTouching(lava2)) {
-            timer1 -= 10;
             if(direction4 === 1) {
                 cube.x = windowWidth - 150;
                 cube.y = 250;
@@ -608,7 +606,6 @@ function level1() {
             }
         }
         if(cube2.isTouching(lavaMonster) || cube2.isTouching(lava1) || cube2.isTouching(lava2)) {
-            timer1 -= 10;
             if(direction4 === 1) {
                 cube2.x = windowWidth - 150;
                 cube2.y = 250;
